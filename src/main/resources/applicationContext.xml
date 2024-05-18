@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="idOfBeanTeacher"
+          class="ru.maxima.Person">
+            <constructor-arg value="Viktor"/>
+            <constructor-arg value="30"/>
+    </bean>
+
+    <bean id="idOfRadioMaximum"
+          class="ru.maxima.RadioMaximum">
+        <constructor-arg value="metallica - am i evil"/>
+        <constructor-arg value="Led Zeppelin - Since i've been living you"/>
+        <constructor-arg value="Rammstein - Deutschland "/>
+    </bean>
+
+    <bean id="idOfRadioEnergy"
+          class="ru.maxima.RadioEnergy">
+        <constructor-arg value="Гимн России - Ольга бузова"/>
+        <constructor-arg value="МС Вспышкин - меня прёт"/>
+        <constructor-arg value="Колбасный цех - колбаса"/>
+    </bean>
+
+    <bean id="idOfRadioSputnik"
+          class="ru.maxima.RadioSputnik">
+        <constructor-arg value = "Вечерние новости"/>
+        <constructor-arg value="Gasoline - I Prevail"/>
+        <constructor-arg value="Break Stuff - Limp Bizkit"/>
+    </bean>
+
+</beans>
