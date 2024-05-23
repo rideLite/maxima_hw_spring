@@ -6,18 +6,21 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
-
-    <bean id="idOfBeanTeacher"
-          class="ru.maxima.Person">
-            <constructor-arg value="Viktor"/>
-            <constructor-arg value="30"/>
-    </bean>
+    <context:component-scan base-package="ru.maxima"/>
 
     <bean id="idOfRadioMaximum"
           class="ru.maxima.RadioMaximum">
-        <constructor-arg value="metallica - am i evil"/>
-        <constructor-arg value="Led Zeppelin - Since i've been living you"/>
-        <constructor-arg value="Rammstein - Deutschland "/>
+        <constructor-arg value="Metallica - Am I evil" />
+        <constructor-arg value="Led Zeppelin - Since i've been living you" />
+        <constructor-arg value="Rammstein - Deutschland " />
+    </bean>
+
+    <bean id="idOfRadioDinamit"
+          class="ru.maxima.RadioDinamit">
+        <constructor-arg value="Abba - Money"/>
+        <constructor-arg   value="ABBA - Happy New Year"/>
+        <constructor-arg value="Metallica - Welcome Home"/>
+
     </bean>
 
     <bean id="idOfRadioEnergy"
@@ -27,11 +30,18 @@
         <constructor-arg value="Колбасный цех - колбаса"/>
     </bean>
 
-    <bean id="idOfRadioSputnik"
-          class="ru.maxima.RadioSputnik">
-        <constructor-arg value = "Вечерние новости"/>
-        <constructor-arg value="Gasoline - I Prevail"/>
-        <constructor-arg value="Break Stuff - Limp Bizkit"/>
+    <bean id="idOfRadioDacha"
+          class="ru.maxima.RadioDacha">
+        <constructor-arg value="Britney Spears - Toxic"/>
+        <constructor-arg value="Dust brothers"/>
+        <constructor-arg value="Limp Bizkit - Dad Vibes"/>
     </bean>
+
+        <bean id="idOfRadioSputnik"
+              class="ru.maxima.RadioSputnik">
+            <constructor-arg value="Вечерние новости"/>
+            <constructor-arg value="Gasoline - I Prevail"/>
+            <constructor-arg value="Break Stuff - Limp Bizkit"/>
+        </bean>
 
 </beans>

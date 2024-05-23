@@ -1,5 +1,5 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>ru.maxima</groupId>
   <artifactId>SpringAppTest</artifactId>
@@ -49,10 +49,26 @@
       <version>1.18.32</version>
       <scope>provided</scope>
     </dependency>
-
-
   </dependencies>
+
   <build>
+    <!--&lt;!&ndash;        <pluginManagment>&ndash;&gt;-->
+    <!--            <plugins>-->
+    <!--                <plugin>-->
+    <!--                    <groupId>org.apache.maven.plugins</groupId>-->
+    <!--                    <artifactId>maven-war-plugin</artifactId>-->
+    <!--                    <version>3.3.1</version>-->
+    <!--                </plugin>-->
+    <!--                <plugin>-->
+    <!--                    <groupId>org.apache.maven.plugins</groupId>-->
+    <!--                    <artifactId>maven-compiler-plugin</artifactId>-->
+    <!--                    <version>3.8.1</version>-->
+    <!--                </plugin>-->
+    <!--            </plugins>-->
+
+    <!--&lt;!&ndash;        </pluginManagment>&ndash;&gt;-->
+
+
     <finalName>SpringAppTest</finalName>
   </build>
 </project>
